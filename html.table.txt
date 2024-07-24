@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>HTML Table</title>  
+</head>  
+<body>  
+    <h2>Basic HTML Table</h2>  
+    <table style="width:100%; border-collapse: collapse;" border="1">  
+        <tr>  
+            <th>Mallam</th>  
+            <th>Auwal</th>  
+            <th>32</th>  
+        </tr>  
+        <tr>  
+            <td>Husseini</td>  
+            <td>Daura</td>  
+            <td>22</td>  
+        </tr>  
+        <tr>  
+            <td>Chibike</td>  
+            <td>Nwakwo</td>  
+            <td>19</td>  
+        </tr>  
+        <tr>  
+            <td>Aliyu</td>  
+            <td>Abubakar</td>  
+            <td>20</td>  
+        </tr>  
+        <tr>  
+            <td>Abubakar</td>  
+            <td>Sani</td>  
+            <td>20</td>  
+        </tr>  
+    </table>  
+</body>  
+</html>  
