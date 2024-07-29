@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Maintenance App</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f4f4f4;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+
+        .container {  
+            max-width: 600px;  
+            margin: auto;  
+            background: white;  
+            padding: 20px;  
+            border-radius: 8px;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        }  
+
+        h1 {  
+            text-align: center;  
+            color: #333;  
+        }  
+
+        .work-input {  
+            display: flex;  
+            flex-direction: column;  
+            margin-bottom: 20px;  
+        }  
+
+        .work-input input {  
+            padding: 10px;  
+            border: 1px solid #ddd;  
+            border-radius: 4px;  
+            margin-bottom: 10px;  
+        }  
+
+        .round-button {  
+            width: 60px;  
+            height: 60px;  
+            border-radius: 50%;  
+            background-color: #007bff;  
+            color: white;  
+            border: none;  
+            font-size: 16px;  
+            cursor: pointer;  
+            text-align: center;  
+            line-height: 60px;  
+            transition: background-color 0.3s;  
+            margin: auto;  
+        }  
+
+        .round-button:hover {  
+            background-color: #0056b3;  
+        }  
+
+        .maintenance-section {  
+            margin-top: 20px;  
+        }  
+
+        .maintenance-card {  
+            padding: 10px;  
+            background: #e9ecef;  
+            margin-bottom: 10px;  
+            border-radius: 4px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Maintenance App</h1>  
+
+        <div class="work-input">  
+            <input type="text" id="workDetail1" placeholder="Enter work details..." required>  
+            <input type="text" id="workDetail2" placeholder="Enter another detail..." required>  
+        </div>  
+
+        <button class="round-button" id="addButton">+</button>  
+
+        <div class="maintenance-section">  
+            <h2>Maintenance Logs</h2>  
+            <div id="logsContainer">  
+                <div class="maintenance-card">Maintenance Log 1</div>  
+                <div class="maintenance-card">Maintenance Log 2</div>  
+                <div class="maintenance-card">Maintenance Log 3</div>  
+            </div>  
+        </div>  
+    </div>  
+
+    <script>  
+        ('addTaskButton').addEventListener('click', function() {  
+    let taskInput = document.getElementById('taskInput');  
+    let taskText = taskInput.value;  
+
+    if (taskText.trim() !== "") {  
+        let taskList = document.getElementById('taskList');  
+
+        let li = document.createElement('li');  
+        li.textContent = taskText;  
+
+        let deleteButton = document.createElement('button');  
+        deleteButton.textContent = 'Delete';  
+        deleteButton.onclick = function() {  
+            taskList.removeChild(li);  
+        };  
+
+        li.appendChild(deleteButton);  
+        taskList.appendChild(li);  
+
+        taskInput.value = ""; // Clear input  
+    } else {  
+        alert("Please enter a task.");  
+    }  
+});
+    </script>  
+</body>  
+</html>
