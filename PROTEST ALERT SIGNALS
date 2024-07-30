@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Protest Safety Warnings</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f8f9fa;  
+            color: #333;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+        h1 {  
+            text-align: center;  
+            color: #dc3545;  
+        }  
+        ul {  
+            list-style-type: none;  
+            padding: 0;  
+        }  
+        li {  
+            background-color: #fff;  
+            margin: 10px 0;  
+            padding: 15px;  
+            border: 1px solid #dc3545;  
+            border-radius: 5px;  
+        }  
+        .important {  
+            font-weight: bold;  
+            color: #dc3545;  
+        }  
+    </style>  
+</head>  
+<body>  
+
+    <h1>Protest Safety Warnings</h1>  
+    <ul>  
+        <li class="important">Do not move around during the protest.</li>  
+        <li class="important">Stock your stores with food items you will need.</li>  
+        <li class="important">When you hear gunshots, lie low on the ground.</li>  
+        <li class="important">Refill your gas.</li>  
+        <li class="important">Refill your car.</li>  
+        <li class="important">Make sure you avoid using abusive words in public.</li>  
+        <li class="important">Be updated with news to catch up with the happenings of your environment.</li>  
+        <li class="important">Always pray before going out.</li>  
+        <li class="important">Make sure to wear fitted clothes and shoes that will enable you to run faster.</li>  
+        <li class="important">Avoid the spread of fake news.</li>  
+        <li class="important">If you are unhealthy, stay at home.</li>  
+        <li class="important">And above all, pray for your country.</li>  
+    </ul>  
+
+</body>  
+</html>
