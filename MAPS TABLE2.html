@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Nigeria Map</title>  
+    <style>  
+        #map {  
+            height: 500px;  /* Set the height of the map */  
+            width: 100%;    /* The width is 100% */  
+        }  
+    </style>  
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>  
+    <script>  
+        function initMap() {  
+            var Nigeria = {lat: 9.072264, lng: 7.491302};  
+            var map = new google.maps.Map(document.getElementById('map'), {  
+                zoom: 10,  
+                center: Nigeria  
+            });  
+            var marker = new google.maps.Marker({  
+                position: Nigeria,  
+                map: map  
+            });  
+        }  
+    </script>  
+</head>  
+<body onload="initMap()">  
+    <h1>Map of Nigeria</h1>  
+    <div id="map"></div>  
+</body>  
+</html>
