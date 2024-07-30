@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Upload Civil War Movie</title>  
+    <style>  
+         body {  
+            font-family: Arial, sans-serif;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            margin: 0;  
+        }  
+        form {  
+            border: 1px solid #ddd;  
+            padding: 20px;  
+            border-radius: 5px;  
+            width: 300px;  
+            background-color: #f9f9f9;  
+        }  
+        label {  
+            display: block;  
+            margin: 10px 0 5px;  
+        }  
+        input[type="text"],  
+        input[type="file"] {  
+            width: 100%;  
+            padding: 8px;  
+            margin-bottom: 15px;  
+            border: 1px solid #ccc;  
+            border-radius: 4px;  
+        }  
+        input[type="submit"] {  
+            width: 100%;  
+            padding: 10px;  
+            border: none;  
+            border-radius: 5px;  
+            background-color: #007bff;  
+            color: white;  
+            cursor: pointer;  
+            transition: background-color 0.3s;  
+        }  
+        input[type="submit"]:hover {  
+            background-color: #0056b3;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>Upload Civil War Movie</h1>  
+    <form action="/submit" method="POST" enctype="multipart/form-data">  
+        <fieldset>  
+            <legend>Upload Information</legend>  
+            <label for="movie-title">CIVILWAR</label>  
+            <input type="text" id="movie-title" name="movie-title" required>  
+
+            <label for="movie-file">Civil War 2024.mp4</label>  
+            <input type="file" id="movie-file" name="movie-file" accept="video/*" required>   
+
+            <input type="submit" value="Upload Movie">  
+            <input type="reset" value="Reset">  
+        </fieldset>  
+    </form>  
+</body>  
+</html>
