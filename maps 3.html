@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Image Example</title>  
+    <style>  
+        body {  
+            text-align: center; /* Center the text and inline elements */  
+        }  
+        #map {  
+            height: 500px;  /* Set the height of the map */  
+            width: 100%;    /* The width is 100% */  
+            background-color: blue;  
+            background-image: -moz-repeating-linear-gradient(03);  
+            background-position-x: left;  
+            font-display: max;  
+            font-style: calc(normal);  
+        }  
+    </style>  
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>  
+    <script>  
+        function initMap() {  
+            var Nigeria = {lat: 9.072264, lng: 7.491302};  
+            var map = google.maps.Map(document.getElementById('map'), {  
+                zoom: 100,  
+                center: Nigeria  
+            });  
+            var marker = new google.maps.Marker({  
+                position: Nigeria,  
+                map: map  
+            });  
+        }  
+    </script>  
+</head>  
+<body onload="initMap()">  
+    <h1>Map of Nigeria</h1>  
+    <img src="Map-of-Nigeria-showing-the-36-states-and-Federal-Capital-Territory-FCT-Abuja.png" alt="Description of the image" width="300" height="200">  
+    <div id="map"></div>  
+    <!-- Navigation -->  
+    <nav>  
+        <a href="#home">Home</a>  
+        <a href="#band">Band</a>  
+        <a href="#tour">Tour</a>  
+        <a href="#contact">Contact</a>  
+        <a href="#tools">Tools</a>  
+        <a href="#tools">Profile</a>
+    </nav>  
+</body>  
+</html>
